@@ -1,0 +1,45 @@
+{
+    "title": "Private Note",
+    "tagline": "Send notes privately.",
+    "home": {
+        "newnote": "New Note",
+        "editnote": "Edit Note",
+        "processing": "Processing...",
+        "failed": "Failed to create new Note",
+        "created": "Note created successfully",
+        "placeholder": "Start writing your note from here...",
+        "beingprocessed": "Your note is being processed...",
+        "failedtomake": "Failed to create new note. This happended due to the following error:",
+        "failedtip": "You can edit and retry updating old note or Create a new note.",
+        "copytip": "Copy this link before leaving this page or else you will lose access to this note forever.",
+        "linkto": "Link to your note"
+    },
+    "button": {
+        "makenote": "Create note",
+        "newnote": "Create new Note",
+        "opennote": "Open note",
+        "editnote": "Edit note",
+        "copylink": "Copy link!",
+        "copynote": "Copy note contents!",
+        "refresh": "Refresh URL",
+        "copied": "Copied!"
+    },
+    "error": {
+        "unknown": "An unknown error occurred. Try again later!",
+        "notexist": "The note does not exist in the database.",
+        "invalid": "Note URL is invalid. Please try again.",
+        "noerror": "No error was detected!",
+        "empty": "Error: The note text is empty."
+    },
+    "note": {
+        "waiting": "Connecting to server...",
+        "waitfor": "Please wait while we get the note contents...",
+        "failed": "Failed to get Note",
+        "readnote": "Read note contents",
+        "created": "This note was created"
+    },
+    "footer": {
+        "version": "Version",
+        "translation": "Support translation"
+    }
+}

@@ -1,0 +1,292 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+.header {
+    border-bottom: 15px solid #ddd;
+    background-color: #efe;
+    padding: 10px 20px;
+}
+.cover {
+    max-width: 1000px;
+    width: 100%;
+    margin-inline: auto;
+}
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+.flexgap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header .flex {
+    align-items: center;
+}
+.header .icon {
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: dodgerblue;
+}
+.header .tag {
+    color: purple;
+    font-size: 14px;
+    display: block;
+    font-weight: 500;
+}
+.button {
+    display: inline-flex;
+    min-width: 180px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: .2s;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.header .mine {
+    border-color: dodgerblue;
+    color: dodgerblue;
+    font-weight: 500;
+}
+.header .mine:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+.header .select {
+    min-width: 200px;
+}
+.footer {
+    margin-top: auto;
+    padding: 10px 20px 30px;
+    border-top: 1px solid #ddd;
+    font-weight: 500;
+    font-size: 14px;
+}
+.footer a {
+    display: block;
+    color: #545454;
+    transition: .2s;
+}
+.footer a:hover {
+    color: dodgerblue;
+}
+.footer .col {
+    gap: 20px;
+}
+.footer .copy {
+    color: blueviolet;
+    font-weight: 700;
+}
+.footer .version {
+    color: #727888;
+}
+.footer .version > span {
+    color: #545454;
+    font-weight: 700;
+}
+
+.link {
+    display: inline-block;
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+.link:hover {
+    color: darkblue;
+}
+
+.main {
+    padding: 20px 10px;
+}
+
+
+.noteapp {
+    display: block;
+    width: 100%;
+}
+.noteapp .head {
+    margin-bottom: 20px;
+}
+.noteapp .title {
+    font-weight: 700;
+    font-size: 20px;
+    color: dodgerblue;
+}
+.noteapp .options {
+    margin-block: 20px;
+}
+.noteapp .options .flex {
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.noteapp .options .flex .flexblock {
+    flex: .5;
+}
+.noteapp .options .label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #545454;
+}
+.noteapp .options .reallabel {
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+.noteapp .options .reallabel input {
+    margin-right: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+}
+.noteapp .options .input {
+    padding: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: .2s;
+    outline: none;
+}
+.noteapp .options .input:hover {
+    border-color: #aaa;
+}
+.noteapp .options .input:focus {
+    border-color: #2684ff;
+    box-shadow: 0 0 0 1px #2684ff;
+}
+.notepad {
+    width: 100%;
+    min-height: 300px;
+    max-height: 550px;
+    padding: 20px 15px 40px;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    outline: none;
+    letter-spacing: 1px;
+    border: none;
+    resize: vertical;
+    background: none;
+    z-index: 2;
+    position: relative;
+}
+.noter:has(.notepad) {
+    position: relative;
+    margin-block: 20px;
+    background-color: #eef;
+}
+.noter:has(.notepad)::after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    z-index: 0;
+    right: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #727888 #fff #fff #727888;
+}
+.tip {
+    color: #727888;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.tip.error {
+    color: #ea4343;
+}
+.center {
+    text-align: center;
+}
+.noteapp .submit {
+    border-color: #2bc48a;
+    background-color: #2bc48a;
+    color: #fff;
+    font-weight: 700;
+}
+.noteapp .submit:hover {
+    background-color: #0e8f5e;
+    border-color: #0e8f5e;
+}
+.noteapp .switch {
+    border-color: #727888;
+    background-color: #727888;
+    color: #fff;
+    font-weight: 700;
+}
+.noteapp .switch:hover {
+    background-color: #494f61;
+    border-color: #494f61;
+}
+
+.noteapp .created {
+    display: block;
+    padding: 10px;
+    background-color: #eef;
+    margin-bottom: 20px;
+    border-left: 5px solid dodgerblue;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #1e8fff49;
+}
+.noteapp .created.reject {
+    border-left-color: #ea4343;
+    background-color: #fee;
+    box-shadow: 3px 3px 4px #ea434349;
+}
+.noteapp .created .key {
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-block: 10px;
+}
+.noteapp .created .bound {
+    font-size: 14px;
+    font-weight: 500;
+}
+.noteapp .created .bound.upper {
+    color: #121212;
+}
+.noteapp .created .bound.lower {
+    color: #727888;
+}
+.noteapp .newnote {
+    background-color: orangered;
+    color: #fff;
+    font-weight: 600;
+}
+.noteapp .newnote:hover {
+    background-color: darkred;
+}
+.noteapp .destroy {
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+}
+.noteapp .destroy:hover {
+    background-color: darkred;
+}
