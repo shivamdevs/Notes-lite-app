@@ -33,7 +33,7 @@ async function addNote(message) {
         return date.setTime(date.getTime());
     })();
     try {
-        const data = await addDoc(collection(db, "notes"), {
+        const data = await addDoc(collection(db, "notes-lite"), {
             note: message,
             secret: secretkey,
             created: created,
@@ -57,7 +57,7 @@ async function addNote(message) {
 };
 
 async function getNote(id, key) {
-    const docRef = doc(db, 'notes', id);
+    const docRef = doc(db, 'notes-lite', id);
     try {
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {

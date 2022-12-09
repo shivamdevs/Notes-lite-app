@@ -14,7 +14,7 @@ function Footer() {
                         <div className="copy">© ShivamDevs 2022</div>
                     </div>
                     <div className="col">
-                        <div className="version"><span>{lang.footer.version}:</span> 1.0.0</div>
+                        <div className="version"><span>{lang.footer.version}:</span> 1.0.1</div>
                     </div>
                 </div>
             </div>
